@@ -5,6 +5,10 @@ services:
     environment:
       EULA: "TRUE"
       RCON_PASSWORD: "mdpRCON"
+      GAMEMODE: "creative"
+      MOTD: "Powered by dockCraft"
+      MAX_PLAYERS: "10"
+      DIFFICULTY: "peaceful"
     ports:
       - 25565:25565
     volumes:
