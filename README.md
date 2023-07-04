@@ -8,7 +8,7 @@ This project includes a Dockerized Minecraft server using the [itzg/minecraft-se
 
 ## 🚀 How to Use
 
-1. Make sure you have Docker installed on your machine.
+1. Make sure you have Docker installed on your machine: `docker --version`.
 2. Clone this repository: `git clone https://github.com/TomnzIT/dockCraft.git`.
 3. Navigate to the project directory: `cd dockCraft`.
 4. Run the Docker containers using Docker Compose: `docker-compose up -d`.
