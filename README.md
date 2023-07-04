@@ -18,3 +18,4 @@ This project includes a Dockerized Minecraft server using the [itzg/minecraft-se
 
 - Make sure to update the RCON connection information in the `docker-compose.yml` and `index.php` files.
 - The `docker-compose.yml` file configures the Docker services to run the Minecraft server and the web server with Apache and PHP.
+- The default Minecraft server port is `25565`, the default RCON port is `25575` and the web interface port is `80`.
