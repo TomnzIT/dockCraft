@@ -1,0 +1,25 @@
+version: '3'
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+      RCON_PASSWORD: "mdpRCON"
+    ports:
+      - 25565:25565
+    volumes:
+      - minecraft_data:/data
+    restart: always
+
+  web:
+    image: php:8.0.2-apache
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - minecraft
+    restart: always
+
+volumes:
+  minecraft_data:
